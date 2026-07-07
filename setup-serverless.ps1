@@ -3,7 +3,7 @@ write-host "Starting script at $(Get-Date)"
 
 # Generate unique random suffix
 [string]$suffix =  -join ((48..57) + (97..122) | Get-Random -Count 7 | % {[char]$_})
-$resourceGroupName = "msl-$suffix"
+$resourceGroupName = "dp3011-$suffix"
 
 Write-Output "Using resource group name: $resourceGroupName"
 

@@ -79,6 +79,6 @@ Write-Host "Creating $resourceGroupName resource group ..."
 az group create --name $resourceGroupName --location $Region --output none
 $dbworkspace = "databricks-$suffix"
 Write-Host "Creating $dbworkspace Azure Databricks workspace in $resourceGroupName resource group..."
-az databricks workspace create --name $dbworkspace --resource-group $resourceGroupName --location $Region --sku standard --output none
+az databricks workspace create --name $dbworkspace --resource-group $resourceGroupName --location $Region --sku premium --output none
 
 write-host "Script completed at $(Get-Date)"
